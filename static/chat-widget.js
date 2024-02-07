@@ -1,8 +1,5 @@
 (function () {
     document.head.insertAdjacentHTML('beforeend', '<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">');
-
-    // Retrieve the OpenAI API key from Azure Application Settings
-    const openaiApiKey = process.env.OPENAI_API_KEY;
     
     const style = document.createElement('style');
     style.innerHTML = `
