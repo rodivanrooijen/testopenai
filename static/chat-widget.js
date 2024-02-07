@@ -1,7 +1,9 @@
 (function () {
     document.head.insertAdjacentHTML('beforeend', '<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">');
 
-
+    // Retrieve the OpenAI API key from Azure Application Settings
+    const openaiApiKey = process.env.OPENAI_API_KEY;
+    
     const style = document.createElement('style');
     style.innerHTML = `
   .hidden {
@@ -197,7 +199,7 @@
 
         // Reply to the user
         let url = "https://api.openai.com/v1/chat/completions";
-        let OPENAI_API_KEY = "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";
+        let OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
         let headers = {
             "Content-Type": "application/json",
