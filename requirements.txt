@@ -3,4 +3,8 @@ uvicorn
 gunicorn
 requests
 python-dotenv
+<<<<<<< HEAD
 openai
+=======
+openai
+>>>>>>> e05a2b6ac622595379dc68e1c845ca98b09e1219
