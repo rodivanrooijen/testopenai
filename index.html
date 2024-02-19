@@ -12,16 +12,43 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@babel/standalone@latest/babel.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Add the following line 2 lines to import the chat-widget.js file -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script async src="/static/chat-widget.js"></script>
+        <!-- Until here-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+        /*Header*/
+        .header {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .header button {
+            font-size: 1.5rem;;
+            border-style: none;
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <div class="header">
+            <a href="index.html"><button>Home</button></a>
+            <a href="ourhotels.html"><button>Our Hotels</button></a>
+            <a href="booking.html"><button>Booking</button></a>
+            <a href=""><button>About Us</button></a>
+            <a href=""><button>Contact</button></a>
+            <a href=""><button>Account</button></a>
+        </div>
+    </header>
     <div id="root"></div>
     <script type="text/babel">
         const {

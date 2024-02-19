@@ -1,5 +1,5 @@
 from typing import AsyncGenerator, NoReturn
-
+import os
 import uvicorn
 import openai
 import requests
@@ -15,7 +15,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Set the OpenAI API key using the client object
-client = AsyncOpenAI(api_key="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")
+client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # No need to set openai.api_key separately
 
